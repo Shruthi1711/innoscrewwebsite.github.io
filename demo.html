@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>INNO-SCREW — Demo</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔩</text></svg>"/>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><div class="logo-mark">IS</div><span>INNO-SCREW</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"        data-i18n="nav_home">Start</a></li>
+      <li><a href="about.html"        data-i18n="nav_about">Über uns</a></li>
+      <li><a href="demo.html"         data-i18n="nav_demo">Demo</a></li>
+      <li><a href="publications.html" data-i18n="nav_pub">Publikationen</a></li>
+      <li><a href="contact.html"      data-i18n="nav_contact">Kontakt</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="btn-lang" id="btn-lang">EN</button>
+      <button class="btn-theme" id="btn-theme">🌙</button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1 data-i18n="nav_demo">Demo</h1>
+  <p>Interaktive Visualisierung der Schraubprozessanalyse · Interactive screw process analysis</p>
+</div>
+
+<section>
+  <div class="section-inner">
+    <div class="demo-layout">
+      <div class="demo-mockup">
+        <div class="bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div></div>
+        <div style="font-family:var(--font-mono);font-size:.75rem;color:var(--text-muted);margin-bottom:.75rem;">Drehmomentverlauf / Torque curve — Station 3</div>
+        <div class="demo-chart">
+          <div class="demo-bar-wrap"><div class="demo-bar" style="height:60px"></div><span>S1</span></div>
+          <div class="demo-bar-wrap"><div class="demo-bar" style="height:90px"></div><span>S2</span></div>
+          <div class="demo-bar-wrap"><div class="demo-bar" style="height:45px"></div><span>S3</span></div>
+          <div class="demo-bar-wrap"><div class="demo-bar" style="height:110px"></div><span>S4</span></div>
+          <div class="demo-bar-wrap"><div class="demo-bar" style="height:75px"></div><span>S5</span></div>
+          <div class="demo-bar-wrap"><div class="demo-bar" style="height:130px;background:linear-gradient(180deg,#e8a020,#b47a10)"></div><span>S6</span></div>
+          <div class="demo-bar-wrap"><div class="demo-bar" style="height:95px"></div><span>S7</span></div>
+          <div class="demo-bar-wrap"><div class="demo-bar" style="height:60px"></div><span>S8</span></div>
+          <div class="demo-bar-wrap"><div class="demo-bar" style="height:140px"></div><span>S9</span></div>
+          <div class="demo-bar-wrap"><div class="demo-bar" style="height:85px"></div><span>S10</span></div>
+        </div>
+        <div class="demo-status">✓ ML-Modell aktiv — Anomalie erkannt bei S6 (Konfidenz: 94.2%)</div>
+      </div>
+      <div class="demo-text">
+        <h2>Echtzeit-Anomalieerkennung</h2>
+        <p>Das INNO-SCREW Demo-System visualisiert Drehmomentsignale aus industriellen Schraubprozessen und erkennt Anomalien in Echtzeit mittels trainierter ML-Modelle.</p>
+        <ul class="demo-features">
+          <li>Echtzeit-Visualisierung von Drehmomentkurven</li>
+          <li>Automatische Anomalieerkennung via ML</li>
+          <li>Konfidenzwerte je Schraubvorgang</li>
+          <li>Vergleich mehrerer Schraubstationen</li>
+          <li>Export von Analyseergebnissen</li>
+        </ul>
+        <div style="margin-top:1.75rem;">
+          <a href="#upload" class="btn btn-accent">Eigene Daten laden</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="upload" style="background:var(--bg-alt);">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Datenupload</div>
+      <h2>Eigene Messdaten analysieren</h2>
+      <p>Laden Sie CSV-Dateien mit Drehmomentkurven hoch und lassen Sie diese durch unser ML-Modell analysieren.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="card-icon">📂</div><h3>CSV Upload</h3><p>Drehmomentkurven im CSV-Format hochladen (Zeit, Drehmoment, Winkel). Unterstützt werden Formate aller gängigen Schraubsysteme.</p></div>
+      <div class="card"><div class="card-icon">🧠</div><h3>ML-Analyse</h3><p>Automatische Klassifikation als IO / NIO mit Konfidenzwert. Das Modell wurde auf realen Industriedaten trainiert.</p></div>
+      <div class="card"><div class="card-icon">📈</div><h3>Ergebnisbericht</h3><p>Detaillierter Report mit Visualisierung, Anomaliestellen, Konfidenzwerten und Vergleich mit Referenzdaten.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <p style="color:var(--text-muted);font-size:.9rem;margin-bottom:1rem;">Demo-Datensatz herunterladen und ausprobieren:</p>
+      <a href="#" class="btn btn-accent">Demo-CSV herunterladen</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <strong>INNO-SCREW</strong> — RIF Institut für Forschung und Transfer e.V., Dortmund
+    <div style="margin-top:.6rem;display:flex;gap:1rem;justify-content:center;">
+      <a href="contact.html">Impressum</a><a href="contact.html">Datenschutz</a>
+    </div>
+    <div class="footer-bottom">&copy; RIF e.V. 2025</div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

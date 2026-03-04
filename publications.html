@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>INNO-SCREW — Publikationen</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔩</text></svg>"/>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><div class="logo-mark">IS</div><span>INNO-SCREW</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"        data-i18n="nav_home">Start</a></li>
+      <li><a href="about.html"        data-i18n="nav_about">Über uns</a></li>
+      <li><a href="demo.html"         data-i18n="nav_demo">Demo</a></li>
+      <li><a href="publications.html" data-i18n="nav_pub">Publikationen</a></li>
+      <li><a href="contact.html"      data-i18n="nav_contact">Kontakt</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="btn-lang" id="btn-lang">EN</button>
+      <button class="btn-theme" id="btn-theme">🌙</button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1 data-i18n="nav_pub">Publikationen</h1>
+  <p>Forschungsbeiträge und Datensätze des INNO-SCREW-Projekts</p>
+</div>
+
+<section>
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Papers</div>
+      <h2>Konferenzbeiträge &amp; Artikel</h2>
+      <p>Peer-reviewed Publikationen aus dem INNO-SCREW-Forschungsprojekt</p>
+    </div>
+    <div class="pub-list">
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-meta">
+          <h4>Anomaly Detection in Screw Fastening Processes Using LSTM-based Neural Networks</h4>
+          <div class="authors">Müller, A.; Weber, J.; Schmidt, L.; Hoffmann, K.</div>
+          <div class="venue">Procedia CIRP — 15th CIRP Conference on Intelligent Computation in Manufacturing Engineering</div>
+          <div style="margin-top:.5rem;"><span class="tag">Machine Learning</span><span class="tag">Anomaly Detection</span><span class="tag">Screw Fastening</span></div>
+        </div>
+        <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a><a href="#">BibTeX</a></div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-meta">
+          <h4>INNO-SCREW Dataset: Real Industrial Torque-Angle Curves for ML Research</h4>
+          <div class="authors">Schmidt, L.; Weber, J.; Braun, F.; Müller, A.</div>
+          <div class="venue">Scientific Data (Nature Portfolio)</div>
+          <div style="margin-top:.5rem;"><span class="tag">Open Dataset</span><span class="tag">Torque</span><span class="tag">Industrial</span></div>
+        </div>
+        <div class="pub-links"><a href="#">PDF</a><a href="#">Zenodo</a><a href="#">DOI</a></div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-meta">
+          <h4>Vergleich maschineller Lernmethoden zur Fehlererkennung in Schraubprozessen</h4>
+          <div class="authors">Weber, J.; Müller, A.; Krause, T.</div>
+          <div class="venue">ZWF — Zeitschrift für wirtschaftlichen Fabrikbetrieb, Vol. 120</div>
+          <div style="margin-top:.5rem;"><span class="tag">Deutsch</span><span class="tag">SPC</span><span class="tag">Deep Learning</span></div>
+        </div>
+        <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a></div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-meta">
+          <h4>Infrastructure Design for Multi-Station Screw Assembly Data Acquisition</h4>
+          <div class="authors">Krause, T.; Schmidt, L.; Braun, F.</div>
+          <div class="venue">15th International Conference on Manufacturing Research (ICMR 2025)</div>
+          <div style="margin-top:.5rem;"><span class="tag">Data Acquisition</span><span class="tag">Infrastructure</span></div>
+        </div>
+        <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a><a href="#">Slides</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--bg-alt);">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Datensätze</div>
+      <h2>Open Datasets</h2>
+      <p>Öffentlich verfügbare Datensätze aus dem INNO-SCREW-Projekt</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>INNO-SCREW v1.0</h3>
+        <p>10.000 Schraubvorgänge aus 5 Stationen. Enthält IO/NIO-Labels, Drehmomentkurven und Winkelkurven. Format: CSV + HDF5.</p>
+        <div style="margin-top:1rem;"><a href="#" class="btn btn-accent" style="font-size:.82rem;padding:.55rem 1.2rem;">Download (Zenodo)</a></div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔬</div>
+        <h3>INNO-SCREW Benchmark</h3>
+        <p>Standardisierter Benchmarkdatensatz für den Methodenvergleich. Enthält Train/Val/Test-Split und Baseline-Ergebnisse.</p>
+        <div style="margin-top:1rem;"><a href="#" class="btn btn-accent" style="font-size:.82rem;padding:.55rem 1.2rem;">Download (GitHub)</a></div>
+      </div>
+      <div class="card">
+        <div class="card-icon">💻</div>
+        <h3>Code &amp; Notebooks</h3>
+        <p>Python-Notebooks zur Datenanalyse, Vorverarbeitung und ML-Baseline-Modelle. Reproduzierbare Pipelines mit PyTorch.</p>
+        <div style="margin-top:1rem;"><a href="#" class="btn btn-accent" style="font-size:.82rem;padding:.55rem 1.2rem;">GitHub Repository</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Vorträge</div>
+      <h2>Konferenzen &amp; Vorträge</h2>
+    </div>
+    <div class="pub-list">
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-meta">
+          <h4>SchraubTec Landshut 2025</h4>
+          <div class="authors">Vortrag: Müller, A.</div>
+          <div class="venue">Internationale Fachtagung für Schraubtechnik, Landshut — Mai 2025</div>
+        </div>
+        <div class="pub-links"><a href="#">Slides</a></div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-meta">
+          <h4>INNO-KOM Projektpräsentation — Jahrestreffen</h4>
+          <div class="authors">Vortrag: Müller, A.; Weber, J.</div>
+          <div class="venue">EURONORM Jahrestreffen, Berlin — März 2025</div>
+        </div>
+        <div class="pub-links"><a href="#">Poster</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <strong>INNO-SCREW</strong> — RIF Institut für Forschung und Transfer e.V., Dortmund
+    <div style="margin-top:.6rem;display:flex;gap:1rem;justify-content:center;">
+      <a href="contact.html">Impressum</a><a href="contact.html">Datenschutz</a>
+    </div>
+    <div class="footer-bottom">&copy; RIF e.V. 2025</div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

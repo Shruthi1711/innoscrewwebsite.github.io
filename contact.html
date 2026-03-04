@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>INNO-SCREW — Kontakt</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔩</text></svg>"/>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><div class="logo-mark">IS</div><span>INNO-SCREW</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"        data-i18n="nav_home">Start</a></li>
+      <li><a href="about.html"        data-i18n="nav_about">Über uns</a></li>
+      <li><a href="demo.html"         data-i18n="nav_demo">Demo</a></li>
+      <li><a href="publications.html" data-i18n="nav_pub">Publikationen</a></li>
+      <li><a href="contact.html"      data-i18n="nav_contact">Kontakt</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="btn-lang" id="btn-lang">EN</button>
+      <button class="btn-theme" id="btn-theme">🌙</button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1 data-i18n="nav_contact">Kontakt</h1>
+  <p>Nehmen Sie Kontakt auf · Get in touch</p>
+</div>
+
+<section>
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div>
+        <div class="contact-box">
+          <h3>📍 Adresse / Address</h3>
+          <div class="contact-row"><span class="ico">🏢</span><div>RIF Institut für Forschung und Transfer e.V.<br/>Joseph-von-Fraunhofer-Str. 20<br/>44227 Dortmund, Deutschland</div></div>
+          <div class="contact-row"><span class="ico">📧</span><a href="mailto:innoscrew@rif-ev.de">innoscrew@rif-ev.de</a></div>
+          <div class="contact-row"><span class="ico">📞</span><a href="tel:+49231844976">+49 231 844976-0</a></div>
+          <div class="contact-row"><span class="ico">🌐</span><a href="https://www.rif-ev.de" target="_blank" rel="noopener">www.rif-ev.de</a></div>
+        </div>
+        <div class="contact-box" style="margin-top:1.25rem;">
+          <h3>👩‍🔬 Projektleitung</h3>
+          <div class="contact-row"><span class="ico">👤</span><div><strong>Dr. Anna Müller</strong><br/>Projektleiterin INNO-SCREW</div></div>
+          <div class="contact-row"><span class="ico">📧</span><a href="mailto:a.mueller@rif-ev.de">a.mueller@rif-ev.de</a></div>
+        </div>
+        <div class="contact-box" style="margin-top:1.25rem;">
+          <h3>🔗 Links</h3>
+          <div class="contact-row"><span class="ico">📦</span><a href="#" target="_blank" rel="noopener">GitHub Repository</a></div>
+          <div class="contact-row"><span class="ico">📊</span><a href="#" target="_blank" rel="noopener">Datensatz auf Zenodo</a></div>
+        </div>
+      </div>
+      <div class="contact-box">
+        <h3>✉️ Nachricht senden / Send a message</h3>
+        <form id="contact-form" onsubmit="handleForm(event)">
+          <div class="form-group"><label>Name *</label><input type="text" placeholder="Ihr Name / Your name" required/></div>
+          <div class="form-group"><label>E-Mail *</label><input type="email" placeholder="ihre@email.de" required/></div>
+          <div class="form-group"><label>Organisation</label><input type="text" placeholder="Universität / Unternehmen"/></div>
+          <div class="form-group"><label>Betreff / Subject</label>
+            <select><option>Allgemeine Anfrage / General inquiry</option><option>Kooperation / Cooperation</option><option>Datensatz / Dataset</option><option>Presse / Press</option></select>
+          </div>
+          <div class="form-group"><label>Nachricht / Message *</label><textarea placeholder="Ihre Nachricht…" required></textarea></div>
+          <button type="submit" class="form-submit">Absenden / Send →</button>
+        </form>
+        <div id="form-success" style="display:none;margin-top:1rem;padding:.75rem 1rem;background:rgba(40,200,100,.08);border:1px solid rgba(40,200,100,.25);border-radius:8px;color:#1a8040;font-weight:600;">
+          ✓ Vielen Dank! Ihre Nachricht wurde gesendet.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--bg-alt);">
+  <div class="section-inner">
+    <div class="section-header"><div class="section-label">Rechtliches</div><h2>Impressum &amp; Datenschutz</h2></div>
+    <div class="impressum-section">
+      <h3>Angaben gemäß § 5 TMG</h3>
+      <p><strong>RIF Institut für Forschung und Transfer e.V.</strong><br/>Joseph-von-Fraunhofer-Str. 20 · 44227 Dortmund<br/>Registergericht: Amtsgericht Dortmund</p>
+      <h3>Kontakt</h3>
+      <p>E-Mail: <a href="mailto:innoscrew@rif-ev.de">innoscrew@rif-ev.de</a> · Telefon: +49 231 844976-0</p>
+      <h3>Haftungsausschluss</h3>
+      <p>Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+      <h3>Datenschutz</h3>
+      <p>Diese Website verwendet keine Cookies zu Tracking-Zwecken. Kontaktanfragen über das Formular werden ausschließlich zur Beantwortung Ihrer Anfrage verwendet.</p>
+      <h3>Förderhinweis</h3>
+      <p>Das Vorhaben <strong>INNO-SCREW</strong> wird über die EURONORM GmbH im Rahmen des Förderprogramms <em>„Innovationskompetenz INNO-KOM"</em> des BMWE gefördert.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <strong>INNO-SCREW</strong> — RIF Institut für Forschung und Transfer e.V., Dortmund
+    <div style="margin-top:.6rem;display:flex;gap:1rem;justify-content:center;">
+      <a href="contact.html">Impressum</a><a href="contact.html">Datenschutz</a>
+    </div>
+    <div class="footer-bottom">&copy; RIF e.V. 2025</div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>
+function handleForm(e) {
+  e.preventDefault();
+  document.getElementById('contact-form').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+}
+</script>
+</body>
+</html>
